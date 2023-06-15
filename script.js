@@ -1,4 +1,4 @@
-const moves = document.getElementById("moves-counter")
+const moves = document.getElementById("moves-count")
 const timeValue = document.getElementById("time")
 const startButton = document.getElementById("start")
 const stopButton = document.getElementById("stop")
@@ -92,7 +92,7 @@ const matrixGenerator = (cardValues, size = 4) => {
           firstCardValue = card.getAttribute("data-card-value");
         } else {
           //increment moves since user selected second card
-          window.onload = function() {movesCounter();}
+          movesCounter();
           //secondCard and value
           secondCard = card;
           let secondCardValue = card.getAttribute("data-card-value");
@@ -132,14 +132,12 @@ startButton.addEventListener("click", () => {
     movesCount = 0;
     seconds = 0;
     minutes = 0;
-    //controls amd buttons visibility
+
     controls.classList.add("hide");
     stopButton.classList.remove("hide");
     startButton.classList.add("hide");
-    //Start timer
     interval = setInterval(timeGenerator, 1000);
-    //initial moves
-    // moves.innerHTML = `<span>Moves:</span> ${movesCount}`;
+    moves.innerHTML = `<span>Moves:</span> ${movesCount}`;
     initializer();
   });
 
