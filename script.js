@@ -20,6 +20,18 @@ const items = [
     { name: "butterfly", image: "/images/butterfly.png" },
     { name: "monkey", image: "/images/monkey.png" },
     { name: "toucan", image: "/images/toucan.png" },
+    { name: "toucan", image: "/images/toucan.png" },
+    { name: "fox", image: "/images/fox.png" },
+    { name: "cat", image: "/images/cat.png" },
+    { name: "whale", image: "/images/whale.png" },
+    { name: "elephant", image: "/images/elephant.png" },
+    { name: "frog", image: "/images/frog.png" },
+    { name: "jellyfish", image: "/images/jellyfish.png" },
+    { name: "snake", image: "/images/snake.png" },
+    { name: "mouse", image: "/images/mouse.png" },
+    { name: "hen", image: "/images/hen.png" },
+    { name: "horse", image: "/images/horse.png" },
+    { name: "snail", image: "/images/snail.png" },
 ];
 
 let seconds =0 , minutes=0;
